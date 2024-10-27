@@ -22,10 +22,10 @@ if (process.env.DATABASE_URL) {
 }
 
 const db = new Sequelize({
-  database: "synergyconnect", // Update the database name
-  username: "synergyconnect_user", // Update the username
-  password: "CNjJhjuewCBXkSxJb32GGd8nSjd14ryl", // Update with the provided password
-  host: "dpg-ciopcutph6elhbprijh0-a.ohio-postgres.render.com", // Update the hostname
+  database: "dagerhss54t4lg", // Update the database name
+  username: "u598jad54f13m4", // Update the username
+  password: "p09b0cfb76cd7589c2a8cdd75e16c53e526da0ccbc6f0a323c670b20b2a05ac68", // Update with the provided password
+  host: "cd5gks8n4kb20g.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com", // Update the hostname
   port: 5432, // Update the port number
   dialect: "postgres",
   dialectOptions: {
