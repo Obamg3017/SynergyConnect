@@ -22,12 +22,12 @@ if (process.env.DATABASE_URL) {
 }
 
 const db = new Sequelize({
-  database: "dagerhss54t4lg", // Update the database name
-  username: "u598jad54f13m4", // Update the username
-  password: "p09b0cfb76cd7589c2a8cdd75e16c53e526da0ccbc6f0a323c670b20b2a05ac68", // Update with the provided password
-  host: "cd5gks8n4kb20g.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com", // Update the hostname
-  port: 5432, // Update the port number
-  dialect: "postgres",
+  database: process.env.DB_NAME,
+  username: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  dialect: process.env.DB_DIALECT,
   dialectOptions: {
     ssl: {
       require: true,
@@ -35,4 +35,5 @@ const db = new Sequelize({
     },
   },
 });
+
 module.exports = db;
